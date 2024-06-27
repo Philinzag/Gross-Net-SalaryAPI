@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "AzAWwcBnb6hWMoL6aQG+iMkz6bEox25zPaMOyX8IKlg=",
+  "Source": "GrossNetSalaryAPI",
+  "BasePath": "_content/GrossNetSalaryAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
