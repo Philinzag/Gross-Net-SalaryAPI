@@ -83,22 +83,6 @@ You can use Postman or any other API client to interact with the API. Below is a
 
 ### Running Unit Tests
 
-Unit tests are included in the `GrossNetSalaryAPI.Tests` project. To run the tests:
-
-1. **Navigate to the test project directory:**
-
-   ```bash
-   cd GrossNetSalaryAPI.Tests
-   ```
-
-2. **Run the tests:**
-
-   ```bash
-   dotnet test
-   ```
-
-## Running Tests
-
 To ensure the correct functionality of the GrossNetSalaryAPI, unit tests are provided. Follow the steps below to run the tests:
 
 1. **Navigate to the Test Project Directory:**
