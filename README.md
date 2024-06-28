@@ -93,7 +93,7 @@ To ensure the correct functionality of the GrossNetSalaryAPI, unit tests are pro
 2. **Add the Necessary Packages:**
    Ensure you have xUnit packages added to the test project:
    ```bash
-   dotnet add package xunit #only run this when using VScode
+   dotnet add package xunit
    dotnet add package xunit.runner.visualstudio
    ```
 
