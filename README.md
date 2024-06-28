@@ -1,6 +1,8 @@
 # GrossNetSalaryAPI
 
-This project is a .NET 8.0 Web API that calculates gross salary, basic salary, PAYE tax, and pension contributions based on a desired net salary and allowances.
+## Overview
+The GrossNetSalaryAPI calculates the gross salary based on the desired net salary and allowances. It also provides additional details such as Basic Salary, Total PAYE Tax, Employee Pension Contribution, and Employer Pension Contribution.
+
 
 ## Getting Started
 
