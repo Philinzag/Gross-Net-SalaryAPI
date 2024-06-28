@@ -51,17 +51,37 @@ namespace GrossNetSalaryAPI.Services
         }
 
         private decimal CalculatePayeTax(decimal taxableIncome)
+{
+    // Define the tax brackets and rates
+    var taxBrackets = new[]
+    {
+        new { MaxIncome = 490m, Rate = 0.05m },
+        new { MaxIncome = 730m, Rate = 0.1m },
+        new { MaxIncome = 3896.67m, Rate = 0.175m },
+        new { MaxIncome = 19896.67m, Rate = 0.25m },
+        new { MaxIncome = 50416.67m, Rate = 0.3m },
+        new { MaxIncome = decimal.MaxValue, Rate = 0.35m }
+    };
+
+    decimal tax = 0m;
+    decimal previousMaxIncome = 0m;
+
+    foreach (var bracket in taxBrackets)
+    {
+        if (taxableIncome <= bracket.MaxIncome)
         {
-            // Simplified PAYE tax calculation for demonstration
-            if (taxableIncome <= 319)
-                return taxableIncome * 0.05m;
-            if (taxableIncome <= 419)
-                return 15.95m + ((taxableIncome - 319) * 0.1m);
-            if (taxableIncome <= 539)
-                return 25.95m + ((taxableIncome - 419) * 0.175m);
-            if (taxableIncome <= 3549)
-                return 46.45m + ((taxableIncome - 539) * 0.25m);
-            return 876.45m + ((taxableIncome - 3549) * 0.3m);
+            tax += (taxableIncome - previousMaxIncome) * bracket.Rate;
+            break;
         }
+        else
+        {
+            tax += (bracket.MaxIncome - previousMaxIncome) * bracket.Rate;
+            previousMaxIncome = bracket.MaxIncome;
+        }
+    }
+
+    return tax;
+}
+
     }
 }

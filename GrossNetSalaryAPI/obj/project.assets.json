@@ -678,11 +678,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Local Repo\\testprojects\\dotnetprojects\\GrossNetSalaryAPI\\GrossNetSalaryAPI.csproj",
+      "projectUniqueName": "D:\\Local Repo\\testprojects\\dotnetprojects\\GrossNetSalary-API\\GrossNetSalaryAPI\\GrossNetSalaryAPI.csproj",
       "projectName": "GrossNetSalaryAPI",
-      "projectPath": "D:\\Local Repo\\testprojects\\dotnetprojects\\GrossNetSalaryAPI\\GrossNetSalaryAPI.csproj",
+      "projectPath": "D:\\Local Repo\\testprojects\\dotnetprojects\\GrossNetSalary-API\\GrossNetSalaryAPI\\GrossNetSalaryAPI.csproj",
       "packagesPath": "C:\\Users\\phili\\.nuget\\packages\\",
-      "outputPath": "D:\\Local Repo\\testprojects\\dotnetprojects\\GrossNetSalaryAPI\\obj\\",
+      "outputPath": "D:\\Local Repo\\testprojects\\dotnetprojects\\GrossNetSalary-API\\GrossNetSalaryAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
